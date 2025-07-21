@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #fdfcfa, #f4f4f9);
+  color: #333;
+  padding-bottom: 140px;
+}
+
+.header {
+  display: flex;
+  justify-content: left;
+  padding: 14px;
+  background-color: #f7e9dc;
+  color: #5b3e2b;
+  font-size: 15px;
+  font-weight: 500;
+  border-bottom: 1px solid #e7d2c5;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 12px;
+}
+
+.photo {
+  overflow: hidden;
+  border-radius: 14px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+  transition: transform 0.3s ease;
+}
+
+.photo:hover img {
+  transform: scale(1.035);
+}
+
+.view-options {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f1edea;
+  padding: 12px 0;
+  border-top: 1px solid #dcd1c7;
+  border-bottom: 1px solid #dcd1c7;
+  position: fixed;
+  bottom: 60px;
+  width: 100%;
+}
+
+.view-options button {
+  background-color: #fff;
+  border: 1px solid #cdbeb5;
+  color: #665c54;
+  font-size: 14px;
+  padding: 6px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.view-options button.active {
+  background-color: #fffaee;
+  color: #3a2e28;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.view-options button:hover {
+  background-color: #f8f0e7;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 14px 0;
+  background-color: #f7e9dc;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  border-top: 1px solid #e7d2c5;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.04);
+}
+
+.tab {
+  color: #947964;
+  font-size: 13px;
+  text-align: center;
+  flex: 1;
+  transition: color 0.25s ease;
+  padding: 6px 0;
+}
+
+.tab.active {
+  color: #3f322a;
+  font-weight: 600;
+  border-top: 2px solid #a97c63;
+}

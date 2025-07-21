@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Board</title>
+    <script src="https://cdn.jsdelivr.net/npm/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="todostyle.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="logo">
+        <img src="Image/logo.png" alt="Logo" />
+      </div>
+      <div class="welcome">
+        <p>Welcome, <strong>Abibsha Ghaju</strong></p>
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Search" />
+        <i class="ph ph-magnifying-glass"></i>
+      </div>
+      <div class="top-icons">
+        <i class="ph ph-question"></i>
+        <i class="ph ph-bell"></i>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <aside class="sidebar">
+        <ul>
+          <li><i class="ph ph-calendar"></i> Calendar</li>
+          <li><i class="ph ph-users-three"></i> Team</li>
+          <li><i class="ph ph-chart-bar"></i> Reports</li>
+          <li><i class="ph ph-gear"></i> Settings</li>
+        </ul>
+      </aside>
+
+      <section class="board">
+        <div class="board-header">
+          <div class="date-info">
+            <h2>June</h2>
+            <p>Saturday, 23rd June, 2025</p>
+          </div>
+          <div class="board-title">
+            <h2>Board - <span>Daily Tasks</span></h2>
+          </div>
+          <div class="avatars">
+            <img src="Image/user1.png" alt="User1" />
+            <img src="Image/user2.png" alt="User2" />
+            <img src="Image/user3.png" alt="User3" />
+            <img src="Image/user4.png" alt="User4" />
+          </div>
+          <div class="board-actions">
+            <button><i class="ph ph-funnel"></i> Filters</button>
+            <button><i class="ph ph-share-network"></i> Share</button>
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="column todo">
+            <h3>To-Do <button>+</button></h3>
+            <div class="task">
+              <p>Task 1</p>
+              <span
+                ><i class="ph ph-trash"></i><i class="ph ph-pencil"></i
+              ></span>
+            </div>
+            <div class="task">
+              <p>Task 2</p>
+              <span
+                ><i class="ph ph-trash"></i><i class="ph ph-pencil"></i
+              ></span>
+            </div>
+            <div class="task">
+              <p>Task 3</p>
+              <span
+                ><i class="ph ph-trash"></i><i class="ph ph-pencil"></i
+              ></span>
+            </div>
+            <div class="task">
+              <p>Task 4</p>
+              <span
+                ><i class="ph ph-trash"></i><i class="ph ph-pencil"></i
+              ></span>
+            </div>
+          </div>
+
+          <div class="column in-progress">
+            <h3>In Progress <button>+</button></h3>
+            <div class="task">
+              <p>Task 1</p>
+              <span
+                ><i class="ph ph-trash"></i><i class="ph ph-pencil"></i
+              ></span>
+            </div>
+            <div class="task">
+              <p>Task 2</p>
+              <span
+                ><i class="ph ph-trash"></i><i class="ph ph-pencil"></i
+              ></span>
+            </div>
+            <div class="task">
+              <p>Task 3</p>
+              <span
+                ><i class="ph ph-trash"></i><i class="ph ph-pencil"></i
+              ></span>
+            </div>
+          </div>
+
+          <div class="column review">
+            <h3>Review <button>+</button></h3>
+            <div class="task">
+              <p>Task 1</p>
+              <span
+                ><i class="ph ph-trash"></i><i class="ph ph-pencil"></i
+              ></span>
+            </div>
+            <div class="task">
+              <p>Task 2</p>
+              <span
+                ><i class="ph ph-trash"></i><i class="ph ph-pencil"></i
+              ></span>
+            </div>
+            <div class="task">
+              <p>Task 3</p>
+              <span
+                ><i class="ph ph-trash"></i><i class="ph ph-pencil"></i
+              ></span>
+            </div>
+          </div>
+
+          <div class="column done">
+            <h3>Done <button>+</button></h3>
+            <div class="task">
+              <p>Task 1</p>
+              <span
+                ><i class="ph ph-trash"></i><i class="ph ph-pencil"></i
+              ></span>
+            </div>
+            <div class="task">
+              <p>Task 2</p>
+              <span
+                ><i class="ph ph-trash"></i><i class="ph ph-pencil"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
