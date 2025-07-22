@@ -75,9 +75,10 @@
 //   console.log("Invalid age entered.");
 // }
 
-const num = 3;
-let guess = prompt("Enter your guess: ");
-while (guess != num) {
-  guess = prompt("Wrong guess. Please enter your guess again: ");
-}
-console.log("Congratulations!!!You have won.");
+// const num = 3;
+// let guess = prompt("Enter your guess: ");
+// while (guess != num) {
+//   guess = prompt("Wrong guess. Please enter your guess again: ");
+// }
+// console.log("Congratulations!!!You have won.");
+
